@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Документация компании</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <style>
+    /* Подключаем стили из вашего описания */
+    :root {
+      --white-color: #ffffff;
+      --primary-color: #13547a;
+      --secondary-color: #80d0c7;
+      --section-bg-color: #f0f8ff;
+      --custom-btn-bg-color: #80d0c7;
+      --custom-btn-bg-hover-color: #13547a;
+      --dark-color: #000000;
+      --p-color: #717275;
+      --border-color: #7fffd4;
+      --link-hover-color: #13547a;
+
+      --body-font-family: 'Open Sans', sans-serif;
+      --title-font-family: 'Montserrat', sans-serif;
+
+      --h1-font-size: 58px;
+      --h2-font-size: 46px;
+      --h3-font-size: 32px;
+      --h4-font-size: 28px;
+      --h5-font-size: 24px;
+      --h6-font-size: 22px;
+      --p-font-size: 20px;
+      --menu-font-size: 14px;
+      --btn-font-size: 18px;
+      --copyright-font-size: 16px;
+
+      --border-radius-large: 100px;
+      --border-radius-medium: 20px;
+      --border-radius-small: 10px;
+
+      --font-weight-normal: 400;
+      --font-weight-medium: 500;
+      --font-weight-semibold: 600;
+      --font-weight-bold: 700;
+    }
+
+    /* Основные стили */
+    body {
+      font-family: var(--body-font-family);
+      margin: 0;
+      padding: 20px;
+      color: var(--dark-color);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--title-font-family);
+      color: var(--primary-color);
+      margin: 20px 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: var(--h2-font-size);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .documents-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .document-item {
+      background-color: var(--white-color);
+      border-radius: var(--border-radius-medium);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175) !important;
+    }
+
+    .document-item:hover {
+
+    }
+
+    .document-item a {
+      display: block;
+      font-size: var(--h5-font-size);
+      color: var(--primary-color);
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .document-item a:hover {
+      color: var(--link-hover-color);
+    }
+
+    .document-item .pdf-icon {
+      font-size: 40px;
+      color: var(--primary-color);
+    }
+
+    /* Адаптивные стили */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: var(--h3-font-size);
+      }
+
+      .document-item {
+        padding: 15px;
+      }
+
+      .document-item a {
+        font-size: var(--h6-font-size);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: var(--h4-font-size);
+      }
+
+      .document-item {
+        padding: 10px;
+      }
+
+      .document-item a {
+        font-size: var(--p-font-size);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="section-title">Документация компании</h1>
+
+    <div class="documents-wrapper">
+      <!-- Документ 1 -->
+      <div class="document-item">
+        <div class="pdf-icon">📄</div>
+        <a href="docs/lorem-ipsum_1.pdf" target="_blank">Документ 1</a>
+      </div>
+
+      <!-- Документ 2 -->
+      <div class="document-item">
+        <div class="pdf-icon">📄</div>
+        <a href="docs/lorem-ipsum_2.pdf" target="_blank">Документ 2</a>
+      </div>
+
+      <!-- Документ 3 -->
+      <div class="document-item">
+        <div class="pdf-icon">📄</div>
+        <a href="docs/lorem-ipsum_3.pdf" target="_blank">Документ 3</a>
+      </div>
+
+      <!-- Документ 4 -->
+      <div class="document-item">
+        <div class="pdf-icon">📄</div>
+        <a href="docs/lorem-ipsum_4.pdf" target="_blank">Документ 4</a>
+      </div>
+
+      <!-- Документ 5 -->
+      <div class="document-item">
+        <div class="pdf-icon">📄</div>
+        <a href="docs/lorem-ipsum_5.pdf" target="_blank">Документ 5</a>
+      </div>
+
+      <!-- Документ 6 -->
+      <div class="document-item">
+        <div class="pdf-icon">📄</div>
+        <a href="docs/lorem-ipsum_6.pdf" target="_blank">Документ 6</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
